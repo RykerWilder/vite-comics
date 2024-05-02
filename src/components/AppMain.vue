@@ -26,7 +26,7 @@ export default {
         background-color: black;
         color: white;
         //debug 
-        height: 50vh;
+        height: 30vh;
     }
 
 </style>

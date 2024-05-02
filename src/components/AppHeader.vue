@@ -108,7 +108,7 @@ export default {
     }
 
     .active {
-        border-bottom: 4px solid $primary_color;
+        border-bottom: 5px solid $primary_color;
         color: $primary_color;
     }
 </style>
