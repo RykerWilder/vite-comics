@@ -9,7 +9,7 @@ export default {
 
 <template>
 
-    <footer>
+    <div class="footer-top">
         <div class="container">
 
             <div class="col">
@@ -60,18 +60,33 @@ export default {
                 </ul>
             </div>
         </div>
-        <div class="ftr-logo"></div>
-    </footer>
+        <div class="footer-logo"></div>
+    </div>
+    <div class="footer-bottom">
+        <button>SIGN-UP NOW</button>
+        <div class="socials">
+            <h2>FOLLOW US</h2>
+            <ul>
+                <li><img src="../assets/img/footer-facebook.png" alt=""></li>
+                <li><img src="../assets/img/footer-periscope.png" alt=""></li>
+                <li><img src="../assets/img/footer-pinterest.png" alt=""></li>
+                <li><img src="../assets/img/footer-twitter.png" alt=""></li>
+                <li><img src="../assets/img/footer-youtube.png" alt=""></li>
+            </ul>
+        </div>
+    </div>
 </template>
 
 <style lang="scss" scoped>
+
+    @use "../style/partials/variables" as *;
 
     img {
         max-width: 100%;
 
     }
 
-    footer {
+    .footer-top {
         gap: 20px;
         display: flex;
         justify-content: space-between;
@@ -108,12 +123,36 @@ export default {
         }
     }
 
-    .ftr-logo {
+    .footer-logo {
         width: 70%;
         background-image: url(../assets/img/dc-logo-bg.png);
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;
+    }
+
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        background-color: $footer_color;
+        padding: 20px 10px;
+
+        button {
+            color: white;
+            padding: 10px;
+            border: 3px solid $primary_color;
+            background-color: $footer_color;
+        }
+
+        h2 {
+            color: $primary_color;
+        }
+
+        .socials {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
     }
 
 </style>
