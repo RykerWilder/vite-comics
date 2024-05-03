@@ -9,7 +9,7 @@ export default {
                 },
                 {
                     option: 'COMICS',
-                    isActive: false
+                    isActive: true
                 },
                 {
                     option: 'MOVIES',
@@ -33,7 +33,7 @@ export default {
                 },
                 {
                     option: 'FANS',
-                    isActive: true
+                    isActive: false
                 },
                 {
                     option: 'NEWS',
@@ -64,15 +64,9 @@ export default {
     </header>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 
-    @use "../style/partials/variables" as *;
-
-    * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    }
+    @use '../style/partials/variables' as *;
 
     img {
         display: block;
@@ -100,15 +94,15 @@ export default {
     }
 
     li {
+        line-height: 150px;
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
         list-style-type: none;
     }
 
     .active {
-        border-bottom: 5px solid $primary_color;
+        border-bottom: 4px solid $primary_color;
         color: $primary_color;
     }
 </style>

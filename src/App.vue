@@ -20,23 +20,13 @@ export default {
 
 <template>
 
-
-
-<AppHeader />
-<AppMain />
-<AppFooter />
+  <AppHeader />
+  <AppMain />
+  <AppFooter />
+  
 </template>
 
-<style>
-
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  .container {
-    width: 80%;
-  }
+<style lang="scss">
 
 
 </style>

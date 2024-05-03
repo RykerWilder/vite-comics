@@ -79,7 +79,7 @@ export default {
 
 <style lang="scss" scoped>
 
-    @use "../style/partials/variables" as *;
+    @use '../style/partials/variables' as *;
 
     img {
         max-width: 100%;
@@ -135,7 +135,7 @@ export default {
         display: flex;
         justify-content: space-between;
         background-color: $footer_color;
-        padding: 20px 10px;
+        padding: 20px 20px;
 
         button {
             color: white;
@@ -144,14 +144,24 @@ export default {
             background-color: $footer_color;
         }
 
-        h2 {
-            color: $primary_color;
-        }
-
         .socials {
             display: flex;
             align-items: center;
             gap: 30px;
+
+            h2 {
+            color: $primary_color;
+            }
+
+            ul {
+                display: flex;
+                justify-content: space-between;
+                gap: 10px;
+            }
+
+            li {
+                list-style-type: none;
+            }
         }
     }
 
