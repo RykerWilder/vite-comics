@@ -52,13 +52,16 @@ export default {
 <template>
 
     <header>
-        <div class="logo">
-            <img src="../assets/img/dc-logo.png" alt="logo DC">
-        </div>
-        <div class="menu">
-            <ul>
-                <li v-for="item in menu" :class="{ active: item.isActive }"> {{ item.option }} </li>
-            </ul>
+        <div class="container header-container">
+
+            <div class="logo">
+                <img src="../assets/img/dc-logo.png" alt="logo DC">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li v-for="item in menu" :class="{ active: item.isActive }"> {{ item.option }} </li>
+                </ul>
+            </div>
         </div>
 
     </header>
@@ -76,6 +79,9 @@ export default {
     header {
         padding: 0 20px;
         height: 150px;
+    }
+
+    .header-container {
         display: flex;
         justify-content: space-between;
         align-items: center;

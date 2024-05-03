@@ -10,23 +10,29 @@ export default {
 <template>
 
     <main>
-        <h1 class="hero"> --> Content Goes Here <-- </h1>
+        <div class="jumbotron">
+
+        </div>
     </main>
 </template>
 
 <style lang="scss" scoped>
 
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-    }
-
     main {
-        background-color: black;
+        height: 100%;
+        width: 100%;
         color: white;
         //debug 
         height: 30vh;
+
+        .jumbotron {
+            height: 100%;
+            background-image: url(../assets/img/jumbotron.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            
+        }
+
     }
 
 </style>
