@@ -83,8 +83,10 @@ export default {
                 }
 
                 h4 {
+                    padding: 10px;
+                    width: 70%;
                     color: white;
-                    font-size: .5rem;
+                    font-size: .8rem;
                 }
             }
         }
