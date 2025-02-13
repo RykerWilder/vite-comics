@@ -90,7 +90,6 @@ export default {
 <template>
 
     <main>
-        <section class="jumbotron"></section>
         <section class="series">
             <button class="btn-series">CURRENT SERIES</button>
             <div class="container">
@@ -108,7 +107,6 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
 @use '../style/partials/variables' as *;
 
 main {
@@ -116,14 +114,6 @@ main {
     width: 100%;
     color: white;
     margin-top: 150px;
-    
-
-    .jumbotron {
-        height: 350px;
-        background-image: url(../assets/img/jumbotron.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
 
     .series {
         padding: 20px;
@@ -148,11 +138,12 @@ main {
         }
     
         .col {
-            width: calc(100% / 6);
+            width: calc(100% / 5);
             padding: 40px;
         }
 
         #load {
+            cursor: pointer;
             display: block;
             padding: 10px 55px;
             margin: 0 auto;

@@ -29,7 +29,6 @@ export default {
     },
     methods: {
         getImageUrl(imageName) {
-            console.log(imageName);
             return new URL(`../assets/img/buy-${imageName}`, import.meta.url).href;
         }
     }
@@ -58,7 +57,6 @@ export default {
 @use '../style/partials/variables' as *;
 
     div {
-
         background-color: $primary_color;
 
         ul {

@@ -52,49 +52,36 @@ export default {
 <template>
 
     <header>
-        <div class="container header-container">
-
-            <div class="logo">
-                <img src="../assets/img/dc-logo.png" alt="logo DC">
-            </div>
-            <div class="menu">
-                <ul>
-                    <li v-for="item in menu" :class="{ active: item.isActive }"> {{ item.option }} </li>
-                </ul>
-            </div>
-        </div>
-
+        <img src="../assets/img/dc-logo.png" alt="logo DC">
+        <ul>
+            <li v-for="item in menu" :class="{ active: item.isActive }"> {{ item.option }} </li>
+        </ul>
     </header>
 </template>
 
 <style lang="scss" scoped>
+@use '../style/partials/variables' as *;
 
-    @use '../style/partials/variables' as *;
+.active {
+    border-bottom: 4px solid $primary_color;
+    color: $primary_color;
+}
+
+header {
+    z-index: 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+    background-color: white;
 
     img {
-        display: block;
-        max-width: 100%;
-    }
-
-    header {
-        z-index: 9999;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 0 20px;
-        height: 150px;
-    }
-
-    .header-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .menu {
-        height: 100%;
+        max-height: 100%;
+        padding: 10px;
     }
 
     ul {
@@ -103,18 +90,14 @@ export default {
         justify-content: center;
         align-items: center;
         gap: 10px;
-    }
 
-    li {
-        line-height: 150px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style-type: none;
+        li {
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+        }
     }
-
-    .active {
-        border-bottom: 4px solid $primary_color;
-        color: $primary_color;
-    }
+}
 </style>
