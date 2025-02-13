@@ -92,11 +92,16 @@ header {
         gap: 10px;
 
         li {
+            cursor: pointer;
             height: 100%;
             display: flex;
             justify-content: center;
             align-items: center;
             list-style-type: none;
+
+            &:hover {
+                color: $primary_color;
+            }
         }
     }
 }

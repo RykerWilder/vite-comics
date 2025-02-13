@@ -9,7 +9,7 @@
 @use '../style/partials/variables' as *;
 
 .jumbotron {
-    height: 80vh;
+    height: 70vh;
     background-image: url(../assets/img/jumbotron.jpg);
     background-size: cover;
     background-repeat: no-repeat;

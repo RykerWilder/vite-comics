@@ -76,7 +76,6 @@ export default {
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 
@@ -100,6 +99,7 @@ img {
         height: 100%;
         display: flex;
         justify-content: space-evenly;
+        gap: 50px;
     }
 }
 
@@ -109,6 +109,7 @@ img {
     padding: 20px 0;
 
     h2 {
+        font-size: 1.3rem;
         color: white;
     }
 
@@ -116,12 +117,15 @@ img {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: space-evenly;
+
+        li {
+            font-size: .9rem;
+            color: grey;
+            list-style-type: none;
+        }
     }
 
-    li {
-        color: grey;
-        list-style-type: none;
-    }
 }
 
 .footer-logo {
@@ -148,6 +152,11 @@ img {
         padding: 10px;
         border: 3px solid $primary_color;
         background-color: $footer_color;
+        transition: background-color .6s linear;
+
+        &:hover {
+            background-color: $primary_color;
+        }
     }
 
     .socials {
@@ -163,10 +172,17 @@ img {
             display: flex;
             justify-content: space-between;
             gap: 10px;
-        }
 
-        li {
-            list-style-type: none;
+            li {
+                list-style-type: none;
+
+                img {
+                    transition: transform .6s linear;
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+            }
         }
     }
 }

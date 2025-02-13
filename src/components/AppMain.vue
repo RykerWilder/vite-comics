@@ -113,7 +113,6 @@ main {
     height: 100%;
     width: 100%;
     color: white;
-    margin-top: 150px;
 
     .series {
         padding: 20px;
@@ -150,6 +149,11 @@ main {
             background-color: $primary_color;
             border: 0;
             color: white;
+            transition: transform .6s linear;
+
+            &:hover {
+                transform: scale(1.2);
+            }
         }
     }
 
