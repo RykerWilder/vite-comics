@@ -1,11 +1,8 @@
 <script>
-import axios from 'axios';
-
     export default {
         props: {
-        serie: Object
+            serie: Object
         },
-
         data() {
             return {
 
