@@ -96,7 +96,7 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <AppCard />
+                        <AppCard :serie="item" />
                     </div>
                 </div>
                 <button id="load">LOAD MORE</button>
