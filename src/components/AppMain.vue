@@ -15,7 +15,7 @@ export default {
             <button class="btn-series">CURRENT SERIES</button>
             <div class="container">
                 <div class="row">
-                    <div class="col" v-for="item in series">
+                    <div class="col">
                         <AppCard />
                     </div>
                 </div>
