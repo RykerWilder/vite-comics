@@ -96,7 +96,7 @@ export default {
             <div class="container">
                 <div class="row">
                     <div class="col" v-for="serie in series">
-                        <AppCard :serie="item" />
+                        <AppCard :serie="serie" />
                     </div>
                 </div>
                 <button id="load">LOAD MORE</button>
