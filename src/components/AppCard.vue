@@ -2,30 +2,23 @@
 import axios from 'axios';
 
     export default {
+        props: {
+        serie: Object
+        },
+
         data() {
             return {
-                apiKey: 'eec8579b20825f26f241f73e50237f36',
-                movies: []
+
             }
-        },
-        methods: {
-            getFilm() {
-                let response = axios.get(`https://api.themoviedb.org/3/collection/172712?api_key=${this.apiKey}`).then(response => {
-                    console.log(response.data);
-                })
-            }                
-        },
-        mounted() {
-            this.getFilm()
         }
     }
 </script>
 
 <template>
 
-    <div class="card">
-        <img src="" alt="">
-        <h4></h4>
+<div class="card">
+        <img :src="serie.thumb" alt="">
+        <h4>{{ serie.series }}</h4>
     </div>
 
 </template>
