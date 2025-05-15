@@ -1,25 +1,14 @@
 <script>
-
-
 export default {
-
-    props: {
-        serie: Object
-    },
-
-    data() {
-        return {
-
-        }
-    }
+    
 }
 </script>
 
 <template>
 
     <div class="card">
-        <img :src="serie.thumb" alt="">
-        <h4>{{ serie.series }}</h4>
+        <img src="" alt="">
+        <h4></h4>
     </div>
 
 </template>
